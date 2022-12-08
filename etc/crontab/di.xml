@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Mview\View\ChangelogInterface">
+        <plugin name="getChangelogSnapshotVersion"
+                type="Aligent\IndexerFix\Plugin\Mview\View\GetChangelogSnapshotVersion"/>
+    </type>
+    <type name="Magento\Framework\Mview\Processor">
+        <plugin name="StoreChangelogVersionsSnapshot"
+                type="Aligent\IndexerFix\Plugin\Mview\StoreChangelogVersionsSnapshot"/>
+    </type>
+</config>

@@ -1,0 +1,23 @@
+{
+    "name": "aligent/magento2-indexer-fix",
+    "description": "Fix to core Magento scheduled indexing to avoid inconsistent index data",
+    "require": {
+        "php": "^8.1",
+        "magento/framework": "*"
+    },
+    "require-dev": {
+        "magento/magento-coding-standard": ">=23"
+    },
+    "type": "magento2-module",
+    "license": [
+        "GPL-3.0-only"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Aligent\\IndexerFix\\": ""
+        }
+    }
+}
