@@ -60,7 +60,8 @@ class StoreChangelogVersionsSnapshot
         }
         $changelogVersions = $this->getChangelogVersions($changelogs);
         foreach ($changelogVersions as $changelogName => $version) {
-            $this->changelogVersionSnapshot->setChangelogVersion($changelogName, $version);
+            $this->changelogVersionSnapshot->setChangelogVersion($changelogName,
+                $version ? (int)$version : null);
         }
     }
 

@@ -14,10 +14,10 @@ class ChangelogVersionSnapshot
      * Set changelog version
      *
      * @param string $changelogName
-     * @param int $version
+     * @param int|null $version
      * @return void
      */
-    public function setChangelogVersion(string $changelogName, int $version): void
+    public function setChangelogVersion(string $changelogName, ?int $version): void
     {
         $this->changelogVersions[$changelogName] = $version;
     }
